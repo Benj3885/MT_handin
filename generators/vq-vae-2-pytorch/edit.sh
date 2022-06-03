@@ -1,0 +1,1 @@
+python edit_image.py --weights out/size512/vqvae_011.pt --noise

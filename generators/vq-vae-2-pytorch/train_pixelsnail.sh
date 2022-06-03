@@ -1,0 +1,9 @@
+#python train_pixelsnail.py lmdb_datasets/defect_vials512_visible --out pixelsnail512_defect_visible --size 512 --hier bottom --batch 16 --ckpt out/pixelsnail512_good/pixelsnail_bottom_005.pt
+#python train_pixelsnail.py lmdb_datasets/good_vials512 --out pixelsnail512_good --size 512 --hier bottom --batch 16 --ckpt out/pixelsnail512_good/pixelsnail_bottom_005.pt
+#python train_pixelsnail.py lmdb_datasets/good_vials512 --out pixelsnail512_good --size 512 --hier top --batch 8 --ckpt out/pixelsnail512_good/pixelsnail_top_001.pt
+#python train_pixelsnail.py lmdb_datasets/vials512 --out pixelsnail512 --size 512 --hier bottom --batch 16 --ckpt out/pixelsnail512/pixelsnail_bottom_002.pt --off_set 2
+#python train_pixelsnail.py lmdb_datasets/vials512 --out pixelsnail512 --size 512 --hier top --batch 8
+#python train_pixelsnail.py lmdb_datasets/vials256_report --out pixelsnail256_report_val --size 256 --hier bottom --batch 64 --val_path lmdb_datasets/vials256_report_val
+#python train_pixelsnail.py lmdb_datasets/size512_overfit_train --out pixelsnail512_overfit --size 512 --hier bottom --batch 16 --val_path lmdb_datasets/size512_overfit_val --ckpt out/pixelsnail512/pixelsnail_bottom_003.pt
+#python train_pixelsnail.py lmdb_datasets/size512_overfit_train --out pixelsnail512_overfit_cont --size 512 --hier bottom --batch 16 --val_path lmdb_datasets/size512_overfit_val --ckpt out/pixelsnail512_overfit/pixelsnail_bottom_112.pt --save_interval 10
+python train_pixelsnail.py lmdb_datasets/size512_overfit_train_no_trans --out pixelsnail512_overfit_no_trans --size 512 --hier bottom --batch 16 --val_path lmdb_datasets/size512_overfit_val_no_trans --save_interval 5

@@ -1,0 +1,37 @@
+#train: [[/home/bjeh/BJEH/datasets/CAM3/defect_removed/],
+#        [/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/train/]
+#]
+
+train: [[/home/bjeh/BJEH/datasets/classifier_set/train/train_good/],
+        [/home/bjeh/BJEH/datasets/classifier_set/train/train_defect/]
+]
+
+validation: [[/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/good_vials/val/],
+             [/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/val]
+]
+
+test: [[/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/good_vials/test/],
+       [/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/test]
+]
+
+random_vial_path: /Data/Real/CAM3/Good/current_version/train
+
+max_defect_imgs: 100
+good_per_defect: .inf
+max_defect_vials: .inf
+
+tracking_uri: /home/bjeh/BJEH/defect_removed/mlruns
+new_samples_path: /home/bjeh/BJEH/CAM3/new_samples/
+
+# Sizes: tiny, small, base, large, xlarge
+size_option: 'tiny'
+lr: 0.001
+momentum: 0.9
+in_chans: 1
+num_classes: 2
+size: 512
+models_per_iteration: 20
+iterations: 1
+epochs: 150
+
+random_seed: 10

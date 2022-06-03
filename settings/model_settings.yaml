@@ -1,0 +1,18 @@
+# Models and their parameters
+# Models
+vqvae_ckpt: 'generators/vq_vae_2_pytorch/out/size512_overfit/vqvae_258.pt' #
+bot_ckpt: 'generators/vq_vae_2_pytorch/out/pixelsnail512_overfit/pixelsnail_bottom_066.pt' #
+
+# Sizes: tiny, small, base, large, xlarge
+size_option: 'tiny'
+lr: 0.001
+momentum: 0.9
+in_chans: 1
+num_classes: 2
+size: 512
+models_per_iteration: 20
+iterations: 1
+epochs: 150
+n_gpus: 2
+
+random_seed: 10

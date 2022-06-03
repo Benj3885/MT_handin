@@ -1,0 +1,29 @@
+# Datasets
+train: [[/home/bjeh/BJEH/datasets/classifier_set_with_hard_samples_removed/train/train_good/],
+        [/home/bjeh/BJEH/datasets/classifier_set_with_hard_samples_removed/train/train_defect/]
+]
+
+#train: [[/home/bjeh/BJEH/datasets/classifier_set_with_new_samples_only_good/train/train_good/],
+#        [/home/bjeh/BJEH/datasets/classifier_set_with_new_samples_only_good/train/train_defect]
+#]
+
+validation: [[/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/good_vials/val/],
+             [/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/val]
+]
+
+test: [[/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/good_vials/test/],
+       [/home/bjeh/BJEH/datasets/CAM3/Visible/randomized_dataset/test]
+]
+max_defect_imgs: .inf
+good_per_defect: .inf
+max_defect_vials: .inf
+
+tracking_uri: /home/bjeh/BJEH/mlruns
+new_samples_path: /home/bjeh/BJEH/CAM3/new_samples/
+# Should be a multiple of the number of gpus used
+n_hard_samples: 2
+new_labels: [0]
+row_interval: 1
+col_interval: 1
+row_ratio: 0.
+augment_samples: False
