@@ -1,7 +1,6 @@
 # MT_handin
-Hand-in of master thesis:
-Using VQ-VAE2 To Augment Images for Automatic Pharmaceutical Defect Inspection
-Augmenting Hard Samples of Small Datasets for Improved Performance
+Hand-in of paper:
+Synthesizing Hard Training Data From Latent Hierarchical Representations
 
 The code has not yet been cleaned up.
 
